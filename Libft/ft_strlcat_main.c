@@ -1,22 +1,21 @@
-//#include "libft.h"
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
-
 int	main(void)
 {
-	int		n;
 	char	*src;
-
-	src = " + 0123456789";
-	n = -20;
-	while (n <= 100)
+	int		size;
+	src = " 9876543210";
+	size = -20;
+	while (size < 30)
 	{
-		char	dest1[] = "What gets us into trouble is not what we don't know. It's what we know for sure that just ain't so.";
-		//char	dest2[] = "What gets us into trouble is not what we don't know. It's what we know for sure that just ain't so.";
-		printf("%d\n", n);
-		printf("original \t: %lu  %s\n", strlcat(dest1, src, n), dest1);
-		printf("\n");
-		n++;
+		char	dest1[30] = "0123456789";
+		char	dest2[30] = "0123456789";
+		printf("%d\n", size);
+		printf("strlcat \t: %lu %s\n", strlcat(dest1, src, size), dest1);
+		printf("ft_strlcat \t: %zu %s\n", ft_strlcat(dest2, src, size), dest2);
+		size++;
 	}
 	return (0);
 }
+
