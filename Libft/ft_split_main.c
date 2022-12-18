@@ -12,7 +12,6 @@ int	main(int argc, char **argv)
 	strs = ft_split(str, c);
 	i = 0;
 	printf("argc = %d\n", argc);
-	printf("splited array size:%d\n\n", strs_count(str, c));
 	while (strs[i])
 	{
 		printf("%d:%s\n", i, strs[i]);

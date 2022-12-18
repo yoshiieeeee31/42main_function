@@ -5,7 +5,7 @@ int	main(void)
 {
 	char	*src;
 	int		size;
-	src = " 9876543210";
+	src = "*9876543210";
 	size = -20;
 	while (size < 30)
 	{

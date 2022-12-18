@@ -1,17 +1,29 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim_main.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ykusano <ykusano@student.42tokyo.jp>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/17 16:53:12 by ykusano           #+#    #+#             */
+/*   Updated: 2022/12/18 17:06:48 by ykusano          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
+
 int	main(void)
 {
-	char	*s;
-	char	*c;
+	char	*s1;
+	char	*c1;
 	char	*str;
-	s = "\t42tokyo-piscine202210 \t42paris-piscine202010 \t42silicon valley-piscine201905";
-	c = "piscine";
-	printf("s = %zu\n", ft_strlen(s));
-	printf("trim_len = %d\n", trim_len(s, c));
-	str = ft_strtrim(s, c);
-	printf("%s\n", s);
+
+	s1 = "Clanguage_yohsinari_lisp_python_C#_42tokyo-piscine20221042paris-piscine20201042siliconvalley-piscine201905";
+	c1 = "lang";
+	str = ft_strtrim(s1, c1);
+	printf("%d\n%d\n", (int)ft_strlen(s1), (int)ft_strlen(str));
 	printf("%s\n", str);
-	return (0);
+	printf("%s\n", s1);
+	printf("%s\n", c1);
 }
