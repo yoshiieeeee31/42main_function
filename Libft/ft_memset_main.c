@@ -8,7 +8,7 @@ int	main(void)
 	int		c;
 	int		s;
 	c = '*';
-	s = 3;
+	s = 2;
 	n = 0;
 	while (n < 128)
 	{

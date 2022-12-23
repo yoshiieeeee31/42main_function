@@ -6,7 +6,7 @@
 /*   By: ykusano <ykusano@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 16:53:12 by ykusano           #+#    #+#             */
-/*   Updated: 2022/12/18 17:06:48 by ykusano          ###   ########.fr       */
+/*   Updated: 2022/12/21 15:10:35 by ykusano          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	main(void)
 	char	*c1;
 	char	*str;
 
-	s1 = "Clanguage_yohsinari_lisp_python_C#_42tokyo-piscine20221042paris-piscine20201042siliconvalley-piscine201905";
-	c1 = "lang";
+	s1 = "PiscineppiscineiscinepiscineClanguage_yohsinari_lisp_python_C#_42tokyo-piscinepiscinepiscinepiscine20221042paris-piscine20201042siliconvalley-piscine201905Piscine";
+	c1 = "piscine";
 	str = ft_strtrim(s1, c1);
 	printf("%d\n%d\n", (int)ft_strlen(s1), (int)ft_strlen(str));
 	printf("%s\n", str);
