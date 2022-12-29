@@ -9,8 +9,10 @@ int	main(void)
 	char	*c;
 	int		i;
 	s1 = "42tokyo  piscine";
-	c = "\0";
+	c = "o";
 	i = 0;
+	ft_putendl_fd(s1, 1);
+	ft_putendl_fd(c, 1);
 	while (c[i])
 	{
 		str1 = strchr(s1, c[i]);

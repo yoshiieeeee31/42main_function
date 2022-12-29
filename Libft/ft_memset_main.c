@@ -7,7 +7,7 @@ int	main(void)
 	int		n;
 	int		c;
 	int		s;
-	c = '*';
+	c = '@';
 	s = 2;
 	n = 0;
 	while (n < 128)

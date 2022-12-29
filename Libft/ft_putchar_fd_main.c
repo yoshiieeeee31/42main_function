@@ -4,7 +4,7 @@ int	main(void)
 {
 	int		i;
 
-	i = 0;
+	i = -100;
 	while (i <= 127)
 	{
 		ft_putchar_fd(i + '0', 1);

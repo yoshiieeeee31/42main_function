@@ -8,14 +8,12 @@ int	main(void)
 	char	*s2;
 	x = -2147483648;
 	s = ft_itoa(x);
-	printf("%d\n", itoa_count(x));
 	printf("ft_itoa : %s\n", s);
 	x = 2147483647;
 	s = ft_itoa(x);
-	printf("%d\n", itoa_count(x));
 	printf("ft_itoa : %s\n", s);
 	y = -100;
-	while (y < 214)
+	while (y < 1000)
 	{
 		s2 = ft_itoa(y);
 		printf("%s ", s2);

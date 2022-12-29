@@ -11,6 +11,7 @@ int	main(void)
 	big = "42tokyopiscine";
 	mini = "i";
 	size = -20;
+	ft_putendl_fd(big, 1);
 	while (size < 30)
 	{
 		str = strnstr(big, mini, size);
