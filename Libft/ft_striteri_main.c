@@ -1,15 +1,20 @@
 #include "libft.h"
+#include <assert.h>
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	f(unsigned int pos, char *c)
 {
-	unsigned int	i;
+	static unsigned int i = 0;
 
-	if (s == NULL)
-		return ;
-	i = 0;
-	while (s[i])
-	{
-		f(i, &s[i]);
-		i++;
-	}
+	assert(pos == i);
+	*c = i + '0';
+	i++;
+}
+
+int	main(void)
+{
+	char	*s;
+
+	s = "Hello,world!";
+	ft_striteri(s, f(4, s));
+	ft_putstr_fd(s, 1);
 }
